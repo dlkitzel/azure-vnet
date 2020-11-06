@@ -1,12 +1,3 @@
-provider "azurerm" {
-  subscription_id = var.subscriptionId
-  tenant_id       = var.tenantId
-  client_id       = var.clientId
-  client_secret   = var.clientSecret
-  
-  features {}
-}
-
 resource "azurerm_resource_group" "example" {
   name     = "darius522bce"
   location = "Central US"
