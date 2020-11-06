@@ -1,6 +1,6 @@
-resource "azurerm_resource_group" "example" {
-  name     = "darius522bce"
-  location = "Central US"
+resource "azurerm_resource_group" "main" {
+  name     = var.resourceGroup
+  location = var.region
 }
 
 module "network" {
