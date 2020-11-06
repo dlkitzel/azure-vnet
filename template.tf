@@ -1,4 +1,9 @@
 provider "azurerm" {
+  subscriptionId = var.subscription_id
+  tenantId       = var.tenant_id
+  clientId       = var.client_id
+  clientSecret   = var.client_secret
+  
   features {}
 }
 
